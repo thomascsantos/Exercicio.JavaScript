@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaizen</title>
+    <style>
+        #area {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        
+        input {
+            border-width: 3px;
+            border-style: double;
+            border-color: black;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            color: rgb(58, 58, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>aulas de thomas</h1>
+    <div>
+        <p>aqui estou colocando em pratica meus <strong>aprendizados</strong></p>
+    </div>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        mover
+    </div>
+    <a href="#">&#9650;</a>
+</body>
+<script>
+    var a = document.getElementById('area')
+
+    function clicar() {
+        a.innerHTML = 'clicou'
+        a.style.background = 'red'
+    }
+
+    function entrou() {
+        a.innerHTML = 'entrou'
+        a.style.background = 'blue'
+    }
+
+    function saiu() {
+        a.innerHTML = 'saiu'
+        a.style.background = 'green'
+    }
+
+    var b = document.getElementById('dois')
+
+    function enviar() {
+        var nome = window.prompt('qual seu nome ?')
+        window.alert(`Bem vindo ${nome}`)
+    }
+</script>
